@@ -1,13 +1,10 @@
 #include <stdio.h>
-#include "SqList.h"
-#include "SeqList.h"
+#include "Test.h"
 
 int main()
 {
-	SeqList L;
-	InitList(L);
-	IncreaseSize(L, 5);
-	printf("%d", L.MaxSize);
+	//TestSqList();
+	TestSeqList();
 
 	return 0;
 }
