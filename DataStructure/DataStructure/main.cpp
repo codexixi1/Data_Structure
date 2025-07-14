@@ -4,7 +4,8 @@
 int main()
 {
 	//TestSqList();
-	TestSeqList();
+	//TestSeqList();
+	TestLinkList();
 
 	return 0;
 }

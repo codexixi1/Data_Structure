@@ -15,6 +15,7 @@
 
 #include "SqList.h"
 #include "SeqList.h"
+#include "LinkList.h"
 
 #endif	// TEST_H
 
@@ -66,4 +67,15 @@ void TestSeqList()
 	printf("删除的值为%d\n", del);
 
 	PrintList(L);
+}
+
+// 测试单链表
+void TestLinkList()
+{
+	LinkList L;
+	InitList(L);
+	if (isEmpty(L))
+	{
+		printf("单链表为空\n");
+	}
 }

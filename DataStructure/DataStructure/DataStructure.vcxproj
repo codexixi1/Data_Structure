@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="LinkList.h" />
     <ClInclude Include="SeqList.h" />
     <ClInclude Include="SqList.h" />
     <ClInclude Include="Test.h" />

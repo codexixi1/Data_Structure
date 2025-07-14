@@ -15,7 +15,7 @@
 
 #include <stdlib.h>
 
-// 静态顺序表的类型定义
+// 动态顺序表的类型定义
 typedef struct {
 	int* data;
 	int MaxSize;
