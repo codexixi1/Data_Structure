@@ -300,4 +300,45 @@ int Length(LinkList L)
 	return len;
 }
 
+// 尾插法建立单链表
+LinkList List_TailInsert(LinkList &L)
+{
+	int x;
+	L = (LinkList)malloc(sizeof(LNode));
+	LNode *s, *r = L;
+	scanf_s("%d", &x);
+	while (x != 9999)
+	{
+		s = (LNode *)malloc(sizeof(LNode));
+		s->data = x;
+		r->next = s;
+		r = s;
+		scanf_s("%d", &x);
+	}
+	r->next = nullptr;
+
+	return L;
+}
+
+// 头插法建立单链表
+LinkList List_HeadInsert(LinkList &L)
+{
+	LNode *s;
+	int x;
+	L = (LinkList)malloc(sizeof(LNode));
+	L->next = nullptr;
+	scanf_s("%d", &x);
+
+	while (x != 9999)
+	{
+		s = (LinkList)malloc(sizeof(LNode));
+		s->data = x;
+		s->next = L->next;
+		L->next = s;
+		scanf_s("%d", &x);
+	}
+
+	return L;
+}
+
 #endif	//LINK_LIST_H

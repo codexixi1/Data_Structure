@@ -79,3 +79,9 @@ void TestLinkList()
 		printf("单链表为空\n");
 	}
 }
+
+// 测试双链表
+void TestDLinkList()
+{
+
+}
